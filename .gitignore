@@ -15,7 +15,7 @@
 
 # next.js
 /.next/
-/out/
+ /out/
 
 # production
 /build
@@ -34,11 +34,14 @@ yarn-error.log*
 .env
 .env.production
 .env.development
-all-text.md
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-supabase-queries.md
+
+# Ignore query and text files
+all-text.*
+supabase-queries.*
