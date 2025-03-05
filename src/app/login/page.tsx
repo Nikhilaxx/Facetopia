@@ -2,6 +2,7 @@ import React from 'react'
 import AuthImg from '@/public/background.jpg'
 import Image from 'next/image'
 import Logo from '@/components/Logo'
+import AuthForm from '@/components/authentication/AuthForm'
 
 const AuthenticationPage = () => {
   return (
@@ -25,8 +26,8 @@ const AuthenticationPage = () => {
        </div>
        </div>
        
-       <div>
-        Login Form
+       <div className='relative flex flex-col items-center justify-center p-2 h-full max-w-xl w-[350px] mx-auto'>
+       <AuthForm />
         </div>
    
     
