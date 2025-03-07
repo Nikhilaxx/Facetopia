@@ -9,10 +9,14 @@ export default {
   ],
   theme: {
   	extend: {
-		fontFamily:{
-		nono:['var(--font-geist-mono)'],
-		sans:['var(--font-geist-sans)'],
-	},
+  		fontFamily: {
+  			nono: [
+  				'var(--font-geist-mono)'
+  			],
+  			sans: [
+  				'var(--font-geist-sans)'
+  			]
+  		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

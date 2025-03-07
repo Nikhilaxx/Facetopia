@@ -66,11 +66,15 @@ const SignUpForm = ({className}:{className?:string}) => {
         formData.append('email',values.email)
         formData.append('password',values.password)
         const {success,error}=await signup(formData)
-        if(!success){toast.error(String(error),{id:toastId})}
-        else{toast.success('Signed Up Successfully!',{id:toastId})
-        redirect('/login')}
+        if(!success)
+          {toast.error(String(error),{id:toastId})
+        setLoading(false)}
+        else
+        {toast.success('Signed Up Successfully! Confirm your mail id',{id:toastId})
         setLoading(false)
-        console.log(values)
+        redirect('/login')}
+        
+       
       }
   return (
     <div className={cn("grid gap-6",className)}><Form {...form}>
