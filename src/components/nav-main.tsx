@@ -80,7 +80,6 @@ export function NavMain() {
   const pathname=usePathname();
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Platform</SidebarGroupLabel>
       <SidebarMenu>
         {navItems.map((item) => (
          <Link  key={item.title} href={item.url} className={cn("rounded-none",
