@@ -10,7 +10,7 @@ import {
   import Image from 'next/image'
 
 const images=[{
-    src:'/hero-images/Charismatic Young Man with a Warm Smile and Stylish Tousled Hair.jpeg',
+    src:'/hero-images/Futuristic Helmet Portrait.jpeg',
     alt:'some alt text'
 },
 {
@@ -37,7 +37,7 @@ const GeneratedImages = () => {
     }
   return (
     <Carousel
-      className="w-full max-w-2xl"
+      className='w-full max-w-2xl '
     >
       <CarouselContent>
         {images.map((image, index) => (
@@ -55,8 +55,9 @@ const GeneratedImages = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+ 
+      <CarouselPrevious className="absolute left-1 top-1/2 -translate-y-1/2 z-10" />
+      <CarouselNext className="absolute right-1 top-1/2 -translate-y-1/2 z-10" />
     </Carousel>
   )
 }

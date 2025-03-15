@@ -9,7 +9,7 @@ const ImageGeneration = () => {
       <div  className='ml-10 -mt-0.8 col-span-1 w-[500px]' >
      <Configurations  />
       </div>
-      <div className='col-span-2 p-4 rounded-xl flex items-center justify-center h-fit'>
+      <div className='col-span-2 p-4 rounded-xl flex items-center  h-fit pl-36'>
       <GeneratedImages />
       </div>
     </section>
